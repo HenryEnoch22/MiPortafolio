@@ -1,5 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import { Image } from 'astro:assets';
+
+import foto from '../assets/henryy.jpeg';
+import rotom from '../assets/Rotomfit.png';
+import maternico from '../assets/Maternico.jpeg';
+import gpc from '../assets/GPC.jpeg';
+import patitas from '../assets/Patitas.png';
+
+
 ---
 
 <BaseLayout title="Inicio — Mi Portafolio" description="Página de inicio">
@@ -27,8 +36,8 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 
       <!-- Imagen -->
       <div class="flex justify-center md:justify-end">
-        <img
-          src="henryy.jpeg"
+        <Image
+          src={foto}
           alt="Foto de perfil de Henry"
           class="rounded-lg shadow-xl shadow-blue-900/20 ring-1 ring-slate-800 w-full max-w-xs object-cover"
         />
@@ -141,12 +150,12 @@ import BaseLayout from '../layouts/BaseLayout.astro'
       <article class="group rounded-xl border border-slate-800 bg-slate-900/40 overflow-hidden hover:border-blue-500 transition">
         <a href="#" class="block">
           <div class="aspect-video bg-slate-800/60" >
-			<img src="/Rotomfit.png" alt="RotomFit" class="object-cover w-full h-full" />
-		  </div>
+			      <Image src={rotom} alt="RotomFit" class="object-cover w-full h-full" />
+		      </div>
           <div class="p-4">
             <h3 class="font-semibold text-slate-100 group-hover:text-blue-400 transition">RotomFit</h3>
             <p class="mt-1 text-sm text-slate-400 text-justify">Sistema web de agendamiento de citas y control de pacientes. Con funcionalidades registrar ejercicios y rutinas para la mejora de la salud física de los paciente. 
-				Cuenta con módulos de blogs, apartado de productos y adjuntamiento de archivos como recetas y facturas para cada paciente.</p>
+				      Cuenta con módulos de blogs, apartado de productos y adjuntamiento de archivos como recetas y facturas para cada paciente.</p>
             <div class="mt-3 flex flex-wrap gap-2 text-xs text-slate-300">
               <span class="rounded border border-slate-700 px-2 py-0.5">React</span>
               <span class="rounded border border-slate-700 px-2 py-0.5">Laravel</span>
@@ -160,8 +169,8 @@ import BaseLayout from '../layouts/BaseLayout.astro'
       <article class="group rounded-xl border border-slate-800 bg-slate-900/40 overflow-hidden hover:border-blue-500 transition">
         <a href="#" class="block">
           <div class="aspect-video bg-slate-800/60">
-			<img src="/Maternico.jpeg" alt="Maternico" class="object-cover w-full h-full" />
-		  </div>
+			      <Image src={maternico} alt="Maternico" class="object-cover w-full h-full" />
+		      </div>
           <div class="p-4">
             <h3 class="font-semibold text-slate-100 group-hover:text-blue-400 transition">Maternico</h3>
             <p class="mt-1 text-sm text-slate-400 text-justify"> Apliación mobile para el agendamiento de eventos importantes para hijos de madres primerizas. 
@@ -179,7 +188,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
       <article class="group rounded-xl border border-slate-800 bg-slate-900/40 overflow-hidden hover:border-blue-500 transition">
         <a href="#" class="block">
           <div class="aspect-video bg-slate-800/60">
-          <img src="/GPC.jpeg" alt="ERP GPC Logística" class="object-cover w-full h-full" />
+            <Image src={gpc} alt="ERP GPC Logística" class="object-cover w-full h-full" />
           </div>
           <div class="p-4">
             <h3 class="font-semibold text-slate-100 group-hover:text-blue-400 transition">GPC Logística</h3>
@@ -199,7 +208,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
       <article class="group rounded-xl border border-slate-800 bg-slate-900/40 overflow-hidden hover:border-blue-500 transition">
         <a href="#" class="block">
           <div class="aspect-video bg-slate-800/60">
-            <img src="/Patitas.png" alt="API Rest Patitas al Rescate" class="object-cover w-full h-full" />
+            <Image src={patitas} alt="API Rest Patitas al Rescate" class="object-cover w-full h-full" />
           </div>
           <div class="p-4">
             <h3 class="font-semibold text-slate-100 group-hover:text-blue-400 transition">API Rest Patitas al Rescate</h3>

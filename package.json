@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "astro build && powershell -NoProfile -Command \"if (Test-Path ./docs) { Remove-Item -Recurse -Force ./docs }; robocopy ./dist ./docs /E > $null; ni -Path ./docs/.nojekyll -ItemType File -Force | Out-Null; git add docs; git commit -m 'deploy to docs'; git push\""
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
