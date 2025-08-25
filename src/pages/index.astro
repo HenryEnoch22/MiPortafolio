@@ -1,13 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-import { Image } from 'astro:assets';
-
-import foto from '../assets/henryy.jpeg';
-import rotom from '../assets/Rotomfit.png';
-import maternico from '../assets/Maternico.jpeg';
-import gpc from '../assets/GPC.jpeg';
-import patitas from '../assets/Patitas.png';
-
 
 ---
 
@@ -36,8 +28,9 @@ import patitas from '../assets/Patitas.png';
 
       <!-- Imagen -->
       <div class="flex justify-center md:justify-end">
-        <Image
-          src={foto}
+        <!-- <Image -->
+        <img
+          src="/MiPortafolio/henryy.jpeg"
           alt="Foto de perfil de Henry"
           class="rounded-lg shadow-xl shadow-blue-900/20 ring-1 ring-slate-800 w-full max-w-xs object-cover"
         />
@@ -150,7 +143,10 @@ import patitas from '../assets/Patitas.png';
       <article class="group rounded-xl border border-slate-800 bg-slate-900/40 overflow-hidden hover:border-blue-500 transition">
         <a href="#" class="block">
           <div class="aspect-video bg-slate-800/60" >
-			      <Image src={rotom} alt="RotomFit" class="object-cover w-full h-full" />
+			      <!-- <Image src={rotom} alt="RotomFit" class="object-cover w-full h-full" /> -->
+             <img
+                src="/MiPortafolio/Rotomfit.png"  alt="Rotomfit" class="object-cover w-full h-full bg-zinc-100"
+             />
 		      </div>
           <div class="p-4">
             <h3 class="font-semibold text-slate-100 group-hover:text-blue-400 transition">RotomFit</h3>
@@ -169,7 +165,10 @@ import patitas from '../assets/Patitas.png';
       <article class="group rounded-xl border border-slate-800 bg-slate-900/40 overflow-hidden hover:border-blue-500 transition">
         <a href="#" class="block">
           <div class="aspect-video bg-slate-800/60">
-			      <Image src={maternico} alt="Maternico" class="object-cover w-full h-full" />
+			      <!-- <Image  -->
+          <img
+            src="/MiPortafolio/Maternico.jpeg" alt="Maternico" class="object-cover w-full h-full"
+            />
 		      </div>
           <div class="p-4">
             <h3 class="font-semibold text-slate-100 group-hover:text-blue-400 transition">Maternico</h3>
@@ -188,7 +187,10 @@ import patitas from '../assets/Patitas.png';
       <article class="group rounded-xl border border-slate-800 bg-slate-900/40 overflow-hidden hover:border-blue-500 transition">
         <a href="#" class="block">
           <div class="aspect-video bg-slate-800/60">
-            <Image src={gpc} alt="ERP GPC Logística" class="object-cover w-full h-full" />
+            <!-- <Image src={gpc} alt="ERP GPC Logística" class="object-cover w-full h-full" /> -->
+             <img
+                src="/MiPortafolio/GPCLogistica.png"  alt="ERP GPC Logística" class="object-cover w-full h-full bg-zinc-100"
+             />
           </div>
           <div class="p-4">
             <h3 class="font-semibold text-slate-100 group-hover:text-blue-400 transition">GPC Logística</h3>
@@ -208,7 +210,9 @@ import patitas from '../assets/Patitas.png';
       <article class="group rounded-xl border border-slate-800 bg-slate-900/40 overflow-hidden hover:border-blue-500 transition">
         <a href="#" class="block">
           <div class="aspect-video bg-slate-800/60">
-            <Image src={patitas} alt="API Rest Patitas al Rescate" class="object-cover w-full h-full" />
+            <img
+              src="/MiPortafolio/Patitas.png" alt="API Rest Patitas al Rescate" class="object-cover w-full h-full"
+            />
           </div>
           <div class="p-4">
             <h3 class="font-semibold text-slate-100 group-hover:text-blue-400 transition">API Rest Patitas al Rescate</h3>
