@@ -1,6 +1,7 @@
 # Astro Starter Kit: Minimal
 
-Astro es un framework moderno de desarrollo web que se fundamenta en HTML como lenguaje base. A diferencia de otros frameworks que abstraen el **HTML** en capas complejas de JavaScript, **Astro prioriza la generación de código HTML estático optimizado, garantizando rapidez en la carga y simplicidad en el despliegue**.
+Astro es un framework moderno de desarrollo web que se fundamenta en **HTML como lenguaje base**. 
+A diferencia de otros frameworks que abstraen el HTML en capas complejas de JavaScript, Astro prioriza la generación de código HTML estático optimizado, garantizando rapidez en la carga y simplicidad en el despliegue.
 
 Cuando un proyecto se construye en Astro, todo el contenido se compila finalmente a **HTML, CSS y JavaScript estándar**, lo que significa que cualquier navegador puede interpretarlo sin depender de entornos adicionales. Esta filosofía se conoce como “Islas de Interactividad”, donde el HTML es el protagonista y el JavaScript solo se utiliza cuando es realmente necesario.
 
